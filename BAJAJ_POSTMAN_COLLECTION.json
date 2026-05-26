@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "bfhl-assessment-collection",
+		"name": "Bajaj Finserv API Round",
+		"description": "API Collection for the Bajaj Finserv Health Limited (BFHL) Challenge.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /bfhl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-lemon-ten-83.vercel.app/bfhl",
+					"protocol": "https",
+					"host": [
+						"backend-lemon-ten-83",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"bfhl"
+					]
+				},
+				"description": "Returns the operation code for the BFHL challenge."
+			},
+			"response": []
+		},
+		{
+			"name": "POST /bfhl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": [\"M\", \"1\", \"334\", \"4\", \"B\", \"z\", \"a\", \"11\"],\n    \"file_b64\": \"data:text/plain;base64,SGVsbG8gQmFqYWo=\"\n}"
+				},
+				"url": {
+					"raw": "https://backend-lemon-ten-83.vercel.app/bfhl",
+					"protocol": "https",
+					"host": [
+						"backend-lemon-ten-83",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"bfhl"
+					]
+				},
+				"description": "Processes data and returns filtered results (numbers, alphabets, etc.)."
+			},
+			"response": []
+		},
+		{
+			"name": "Test Base Route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-lemon-ten-83.vercel.app/",
+					"protocol": "https",
+					"host": [
+						"backend-lemon-ten-83",
+						"vercel",
+						"app"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
