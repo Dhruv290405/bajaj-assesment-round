@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { Plus, Filter, AlertTriangle, Clock, ChevronRight, ChevronLeft, Trash2 } from 'lucide-react';
 
-const API_BASE = '/api/tickets';
+const API_BASE = 'https://deskflow-api-dhruv.vercel.app/tickets';
 
 const App = () => {
     const [tickets, setTickets] = useState([]);
